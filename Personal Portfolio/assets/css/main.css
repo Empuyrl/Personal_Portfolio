@@ -3907,3 +3907,17 @@ input, select, textarea {
 			}
 
 		}
+
+		.project {
+			display: flex;
+			margin-bottom: 2em;
+		}
+		
+		.project .image {
+			flex: 1;
+			margin-right: 1em;
+		}
+		
+		.project .description {
+			flex: 2;
+		}
