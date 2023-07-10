@@ -3910,14 +3910,16 @@ input, select, textarea {
 
 		.project {
 			display: flex;
+			flex-wrap: nowrap;
 			margin-bottom: 2em;
-		}
+		  }
 		
-		.project .image {
-			flex: 1;
-			margin-right: 1em;
-		}
+		.project .image img {
+			max-width: 50%;
+			height: auto;
+		  }
 		
-		.project .description {
-			flex: 2;
-		}
+		  .project .description {
+			flex: 2;  /* This takes up 2 fractions of the available space, making it bigger than .image */
+			width: 100%;  /* This will make the text fill the .description container */
+		  }
